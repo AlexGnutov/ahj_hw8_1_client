@@ -1,0 +1,104 @@
+.container {
+  width: 600px;
+  height: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.chat-container {
+  position: relative;
+  display: flex;
+}
+
+.ch-users {
+  width: 200px;
+  min-height: 500px;
+  overflow-y: auto;
+  background-color: lightgrey;
+}
+.ch-messages {
+  width: 400px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+.ch-messages-list {
+  height: 500px;
+  overflow-y: auto;
+}
+.ch-message-input {
+}
+
+/*User card*/
+.user-card {
+  padding: 10px 10px;
+}
+.user-card-name {
+  font-size: large;
+}
+
+/*Login form*/
+.ch-form-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10,10,10,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ch-form {
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto;
+  background-color: lightblue;
+  text-align: center;
+}
+.ch-server-message {
+  color: red;
+  min-height: 20px;
+  margin-top: 10px;
+}
+.ch-form-button {
+  margin: 10px;
+}
+/*Message Styles*/
+.ch-message-container {
+  width: auto;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 5px;
+}
+.ch-message-own {
+  background-color: lightgreen;
+  text-align: right;
+  margin-left: 150px;
+  margin-right: 10px;
+}
+.ch-message-not-own {
+  background-color: orange;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 150px;
+}
+.ch-message-header {}
+.ch-message-text {}
+
+/*Send message form*/
+.ch-send-message-form {
+  padding: 10px;
+}
+.ch-message-input {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 3px;
+  height: 30px;
+
+}
+
+/*General*/
+.hidden {
+  display: none;
+}
