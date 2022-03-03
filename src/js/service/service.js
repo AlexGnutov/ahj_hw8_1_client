@@ -9,7 +9,7 @@ export default class ServiceWS {
   }
 
   initConnection() {
-    this.ws = new WebSocket('ws://ahjhw81server.herokuapp.com/');
+    this.ws = new WebSocket('wss://ahjhw81server.herokuapp.com/');
     // Catch all incoming messages and pass them to handler function
     this.ws.addEventListener('message', (e) => {
       const data = JSON.parse(e.data);
