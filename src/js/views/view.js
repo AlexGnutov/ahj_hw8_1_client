@@ -31,9 +31,11 @@ export default class View {
   }
 
   removeUser(username) {
-    const userCards = this.container.querySelector('.ch-users').children;
-    const elem = Array.from(userCards).find((card) => card.querySelector('.user-card-name').textContent === username);
-    elem.remove();
+    const userCards = Array.from(this.container.querySelectorAll('.user-card'));
+    const elem = userCards.find((card) => card.querySelector('.user-card-name').innerText === username);
+    if (elem) {
+      elem.remove();
+    }
   }
 
   addMessages(messages) {
